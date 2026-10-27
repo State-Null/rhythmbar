@@ -91,7 +91,7 @@ local KIND_NAMES = {
 local defaults = {
     use_crossbar_void = true,
     offset_x = 8,
-    offset_y = -198,
+    offset_y = -189,
     pos = { x = 0, y = 0 },
     draggable = false, -- Always draggable during `//rbar test`, or toggle anytime with `//rbar drag`
     bar = {
@@ -249,12 +249,12 @@ local function refresh_layout_cache()
 
     if settings.use_crossbar_void then
         local ox = tonumber(settings.offset_x) or 8
-        local oy = tonumber(settings.offset_y) or -198
+        local oy = tonumber(settings.offset_y) or -189
         cached_cx = math_floor(ui_x / 2) + ox
         cached_cy = ui_y + oy
     else
         cached_cx = tonumber(settings.pos and settings.pos.x) or (math_floor(ui_x / 2) + 8)
-        cached_cy = tonumber(settings.pos and settings.pos.y) or (ui_y - 198)
+        cached_cy = tonumber(settings.pos and settings.pos.y) or (ui_y - 189)
     end
 
     local total_w = math_max(24, tonumber(settings.bar.width) or 96)
@@ -922,7 +922,7 @@ windower.register_event('addon command', function(cmd, ...)
     elseif cmd == 'resetpos' then
         settings.use_crossbar_void = true
         settings.offset_x = 8
-        settings.offset_y = -198
+        settings.offset_y = -189
         config.save(settings)
         refresh_layout_cache()
         chat_log(s_format('Position reset to xivcrossbar center void (%d, %d).', cached_cx, cached_cy))

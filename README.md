@@ -61,8 +61,8 @@ Unlike modern MMOs, **FFXI has no action queue buffer**, and your character's vi
 | `//rbar drag` | Toggle always-on mouse dragging on/off |
 | `//rbar size <w> [h]` | Set bar width and height in pixels (default: `//rbar size 96 6`) |
 | `//rbar pos <x> <y>` | Set exact screen coordinates |
-| `//rbar offset <dx> <dy>` | Set offset relative to screen center/bottom (`xivcrossbar` void default: `8 -198`) |
-| `//rbar resetpos` | Reset position back to the `xivcrossbar` center void (`8, -198`) |
+| `//rbar offset <dx> <dy>` | Set offset relative to screen center/bottom (`xivcrossbar` void default: `8 -189`) |
+| `//rbar resetpos` | Reset position back to the `xivcrossbar` center void (`8, -189`) |
 | `//rbar text` | Toggle the compact `0.1s` countdown number above the center tick |
 | `//rbar autohide` | Toggle auto-hiding when idle/ready (default: `ON`) |
 | `//rbar autotune` | Toggle automatic `+0.04s` lockout self-calibration (default: `ON`) |
